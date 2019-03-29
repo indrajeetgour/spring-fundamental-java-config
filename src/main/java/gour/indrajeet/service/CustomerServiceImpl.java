@@ -11,8 +11,8 @@ import java.util.List;
 
 @Service("customerService")
 //@Scope("singleton")
-@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON) // or use the configurableBeanFactory class instead of defining
-// the constact directly like singleton
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) // or use the configurableBeanFactory class instead of defining
+// the constact directly like singleton or prototype
 public class CustomerServiceImpl implements CustomerService {
     // here we will have all the service logic on service tier
 

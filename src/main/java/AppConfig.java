@@ -1,12 +1,18 @@
-import gour.indrajeet.service.CustomerService;
-import gour.indrajeet.service.CustomerServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
 @ComponentScan({"gour.indrajeet"})
+@PropertySource("app.properties")
 public class AppConfig {
+    //    to load properties values into current context for further use
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer getPropertySourcesPlaceholderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer();
+    }
 
     /*also comment out the below: and added the @Service annotation in the service Impl class */
    /* @Bean(name = "customerService")
