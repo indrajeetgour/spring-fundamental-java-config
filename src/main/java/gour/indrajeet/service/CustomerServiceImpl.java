@@ -11,11 +11,17 @@ public class CustomerServiceImpl implements CustomerService {
     // customer repo implementation
     private CustomerRepository customerRepository;
 
+    public CustomerServiceImpl(){
+
+    }
+
     public CustomerServiceImpl(CustomerRepository customerRepository) {
+        System.out.println("We are using constructor injection!!");
         this.customerRepository = customerRepository;
     }
 
     public void setCustomerRepository(CustomerRepository customerRepository) {
+        System.out.println("We are using setter injection!!");
         this.customerRepository = customerRepository;
     }
 
