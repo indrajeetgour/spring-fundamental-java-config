@@ -1,5 +1,3 @@
-package gour.indrajeet;
-
 import gour.indrajeet.repository.CustomerRepository;
 import gour.indrajeet.repository.HibernateCustomerRepositoryImpl;
 import gour.indrajeet.service.CustomerService;

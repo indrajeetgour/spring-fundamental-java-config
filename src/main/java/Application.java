@@ -1,6 +1,4 @@
-import gour.indrajeet.AppConfig;
 import gour.indrajeet.service.CustomerService;
-import gour.indrajeet.service.CustomerServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
